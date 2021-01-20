@@ -1,1 +1,2 @@
 # WebDiP-Projekt
+Unutar foldera se nalazi projekt koji sam izradio kao student za kolegij Web Dizajn i Programiranje te sam pomoću tog projekta dobio prolaznu ocjenu na navedenom kolegiju. Ovo je moj prvi projekt za koji sam svjestan da nema kapacitet da bude web aplikacija u komercijalnoj upotrebi te je daleko od toga, ali imam izrazitu volju sam učiti i graditi svoje vještine kako bih napredovao u svom području. 
