@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dokumentacija</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naslov" content="Stranica dokumentacije">
+    <meta name="autor" content="Andrija Krmpotić">
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/akrmpotic.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/background.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
+</head>
+<body>
+<header>
+    <nav id="nav" class="navcontainer">
+        <ul>
+            <li><a href ='index.php'>Početna</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="section">
+    <h2>Opis projektnog zadatka</h2>
+    <pre>
+        Kao projektni zadatak iz kolegija Web Dizajn i Programiranje izradio sam stranicu/sustav koja ima mogućnost registracije
+        običnih korisnika, a potom administrator može promovirati registrirane korisnike u moderatore. Registrirani korisnici,
+        moderatori i administratori imaju različite mogućnosti. Sama svrha stranice je vođenje plesnih škola, odnosno
+        mogućnost da se vodi sustav plesnih škola kroz web aplikaciju. Administrator ima mogućnost kreirati plesne škole
+        te im dodjeliti moderatore/mentore koji će voditi plesne škole. Administrator isto tako daje prolaz ili pad na ispitu
+        kojeg registrirani korisnik priloži te ima uvid u konfiguraciju opcija vezanih uz stranicu. Moderatori kreiraju termine
+        za plesne škole koje vode i za pojedine polaznike plesnih škola, odobravaju ili odbijaju zahtjeve polaznika plesnih škola.
+        Registrirani korisnici, odnosno polaznici imaju mogućnost pregleda slobodnih mentora te se mogu prijaviti za mentorstvo kod istog.
+        Isto tako imaju mogućnost vidjeti popis svojih termina te popis škola koje su trenutno aktivne u sustavu. Neregistrirani korisnici
+        imaju mogućnost da vide popis škola koje postoje u sustavu, ali se na njih ne mogu prijaviti kao polaznici. Neregistrirani
+        korisnici isto tako vide i popis mentora koji rade u pojedinim aktivnim školama te u kojim školama su mentori prijavljeni.
+    </pre><br>
+    <h2>Opis projektnog rješenja</h2>
+    <pre>
+        Rješenje nije u cjelosti realizirano. Kod neregistriranog korisnika nedostaje galerija slika, kod registriranog korisnika
+        nedostaje plaćanje i pregled računa. Kod moderatora nedostaje aplikativna statistika dok kod administratora nedostaje konfiguracija
+        sustava, pregled i pretraživanje dnevnika, statistika rada sustava i grafički prikazi statistike.
+    </pre><br>
+    <h2>Era dijagram</h2>
+    <img src="./multimedija/ERAdijagramPNG.png" width="100%" alt="Era Dijagram"><br>
+    <h2>Popis korištenih tehnologija i alata</h2>
+    <ul>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>MySQL Workbench</li>
+        <li>phpStorm</li>
+        <li>FileZilla</li>
+    </ul><br>
+    <h2>Popis skripti</h2>
+    <ul>
+        <li>aktivacija.php:</t></t> Aktiviranje računa putem linka te se korisnik preusmjeri na početnu stranicu</li>
+        <li>footer.php: Podnožje stranice </li>
+        <li>header_navigation.php: Zaglavlje stranice koje uključuje sve potrebne skripte</li>
+        <li>index.php: Početna stranica</li>
+        <li>izmjeni_korisnika.php: Skripta koja izvršava otključava zaključani korisnički račun</li>
+        <li>korisnicka_imena.php: Enkodira json polje svih korisnika za provjeru korisnickih imena</li>
+        <li>kreirajSkolu.php: Omogućuje administratoru da kreira novu plesnu školu</li>
+        <li>odabranaSkola.php: Daje pregled detalja odabrane škole u popisu plesnih škola</li>
+        <li>odjava.php: Odjavljuje prijavljenosg korisnika/uništava sesiju</li>
+        <li>pomocneFunkcije.php: Sadrži sve dijelove koda u funkcijama zbog smanjenja redundantnosti</li>
+        <li>popis_mentori.php: Ispisuje popis svih mentora i plesnih škola u kojima mentori rade</li>
+        <li>popis_plesneSkole.php: Ispisuje sve aktivne plesne škole te daje opciju detaljnog pregleda</li>
+        <li>popisTermin.php: Daje pregled svih termina za trenutnog registriranog korisnika</li>
+        <li>posaljiZahtjevMentorstvo.php: Daje mogućnost korisniku da pošalje zahtjev za mentorstvom odabranom mentoru</li>
+        <li>potvrdaZahtjevMentorstvo.php: Daje mogućnost mentoru da potvrdi zahtjeve koji još nisu potvrđeni</li>
+        <li>potvrdiIspit.php: Daje mogućnost administratoru da dodijeli prolaz/pad odabranom zahtjevu za ispit</li>
+        <li>prijava.php: Stranica za prijavu registriranih korisnika</li>
+        <li>registracija.php: Stranica za registraciju neregistriranih korisnika</li>
+        <li>slobodniMentori.php: Ispisuje popis slobodnih mentora te daje mogućnost slanja zahtjeva za mentorstvo</li>
+        <li>zaboravljenaLozinka.php: Uz upis e-maila šalje novu lozinku korisniku te mjenja stanje u bazi</li>
+        <li>zahtjeviIspit.php: Ispisuje sve zahtjeve za ispit od registriranih korisnika</li>
+        <li>ZahtjevMentorstvo.php: Ispisuje sve zahtjeve za mentorstvo od registriranih korisnika</li>
+        <li>zakljucaniKorisnici.php: Ispisuje popis zaključanih korisnika uz mogućnost odključavanja</li>
+    </ul><br>
+    <h2>Popis vanjskih modula</h2>
+    <ul>
+        <li>Google reCaptcha: korišteno kod registracije</li>
+    </ul>
+</section>
+</body>
+</html>
